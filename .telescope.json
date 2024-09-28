@@ -1,0 +1,126 @@
+{
+  "protoDirs": [
+    "./"
+  ],
+  "outPath": "gen/src",
+  "options": {
+    "env": "default",
+    "removeUnusedImports": true,
+    "classesUseArrowFunctions": false,
+    "useSDKTypes": true,
+    "includeExternalHelpers": false,
+    "logLevel": 0,
+    "interfaces": {
+      "enabled": true,
+      "useByDefault": true,
+      "useByDefaultRpc": true,
+      "useUnionTypes": false
+    },
+    "prototypes": {
+      "enabled": true,
+      "parser": {
+        "keepCase": false,
+        "alternateCommentMode": true,
+        "preferTrailingComment": false
+      },
+      "methods": {
+        "encode": true,
+        "decode": true,
+        "fromJSON": false,
+        "toJSON": false,
+        "fromPartial": true,
+        "toSDK": false,
+        "fromSDK": false,
+        "fromSDKJSON": false,
+        "toAmino": true,
+        "fromAmino": true,
+        "toProto": true,
+        "fromProto": true
+      },
+      "strictNullCheckForPrototypeMethods": false,
+      "includePackageVar": false,
+      "fieldDefaultIsOptional": false,
+      "allowUndefinedTypes": false,
+      "useOptionalNullable": true,
+      "addTypeUrlToObjects": true,
+      "addAminoTypeToObjects": false,
+      "addTypeUrlToDecoders": true,
+      "enableRegistryLoader": true,
+      "enableMessageComposer": true,
+      "optionalQueryParams": false,
+      "optionalPageRequests": false,
+      "typingsFormat": {
+        "customTypes": {
+          "useCosmosSDKDec": true
+        },
+        "num64": "bigint",
+        "useDeepPartial": false,
+        "useExact": false,
+        "timestamp": "date",
+        "duration": "duration",
+        "updatedDuration": false,
+        "setDefaultEnumToUnrecognized": true
+      }
+    },
+    "bundle": {
+      "enabled": true
+    },
+    "tsDisable": {
+      "files": [],
+      "patterns": [],
+      "disableAll": false
+    },
+    "eslintDisable": {
+      "files": [],
+      "patterns": [],
+      "disableAll": false
+    },
+    "stargateClients": {
+      "enabled": true,
+      "includeCosmosDefaultTypes": true
+    },
+    "lcdClients": {
+      "bundle": true,
+      "enabled": true,
+      "scopedIsExclusive": true
+    },
+    "rpcClients": {
+      "type": "tendermint",
+      "enabled": true,
+      "extensions": true,
+      "inline": false,
+      "bundle": true,
+      "camelCase": true,
+      "enabledServices": [
+        "Msg",
+        "Query",
+        "Service"
+      ],
+      "scopedIsExclusive": true
+    },
+    "reactQuery": {
+      "enabled": false,
+      "include": {
+        "patterns": [],
+        "packages": [],
+        "protos": []
+      }
+    },
+    "mobx": {
+      "enabled": false,
+      "include": {
+        "patterns": [],
+        "packages": [],
+        "protos": []
+      }
+    },
+    "pinia": {
+      "enabled": false,
+      "include": {
+        "patterns": [],
+        "packages": [],
+        "protos": []
+      }
+    }
+  }
+}
